@@ -46,7 +46,7 @@ public class CryptKeeperSettings extends InstrumentedFragment {
 
     // Minimum battery charge level (in percent) to launch encryption.  If the battery charge is
     // lower than this, encryption should not be activated.
-    private static final int MIN_BATTERY_LEVEL = 80;
+    private static final int MIN_BATTERY_LEVEL = 10;
 
     private View mContentView;
     private Button mInitiateButton;
