@@ -185,14 +185,7 @@ public class InstalledAppDetails extends AppInfoBase
 
     private boolean handleDisableable(Button button) {
         boolean disableable = false;
-        // Try to prevent the user from bricking their phone
-        // by not allowing disabling of apps signed with the
-        // system cert and any launcher app in the system.
-        if (mHomePackages.contains(mAppEntry.info.packageName)
-                || Utils.isSystemPackage(getContext().getResources(), mPm, mPackageInfo)) {
-            // Disable button for core system applications.
-            button.setText(R.string.disable_text);
-        } else if (mAppEntry.info.enabled && !isDisabledUntilUsed()) {
+        if (mAppEntry.info.enabled) {
             button.setText(R.string.disable_text);
             disableable = true;
         } else {
