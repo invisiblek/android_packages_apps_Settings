@@ -247,6 +247,7 @@
 
     <!-- Vibrate on fp scanner -->
     <string name="vibrate_on_fp_title">Vibrate on fingerprint scanner</string>
+    <string name="vibrate_on_fp_onlysuccess_title">Only vibrate on success</string>
 
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>

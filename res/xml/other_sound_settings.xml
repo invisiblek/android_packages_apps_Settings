@@ -62,6 +62,13 @@
             android:title="@string/vibrate_on_fp_title"
             android:defaultValue="true" />
 
+    <!-- Only vibrate for fingerprint scanner for a successful scan -->
+    <cyanogenmod.preference.CMSecureSettingSwitchPreference
+            android:key="vibrate_on_fp_onlysuccess"
+            android:title="@string/vibrate_on_fp_onlysuccess_title"
+            android:defaultValue="false"
+            android:dependency="vibrate_on_fp" />
+
     <!-- Vibrate on touch -->
     <SwitchPreference
             android:key="vibrate_on_touch"

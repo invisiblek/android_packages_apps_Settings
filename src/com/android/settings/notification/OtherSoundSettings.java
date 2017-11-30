@@ -223,6 +223,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
 
         if (!mContext.getPackageManager().hasSystemFeature(FEATURE_FINGERPRINT)) {
             removePreference(CMSettings.Secure.VIBRATE_ON_FP);
+            removePreference(CMSettings.Secure.VIBRATE_ON_FP_ONLYSUCCESS);
         }
 
         final CMHardwareManager hardware = CMHardwareManager.getInstance(mContext);
